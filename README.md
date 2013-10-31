@@ -9,7 +9,7 @@ Shipping Controller using Correios Service and Jadlog Sevice
 
 ** Only with submodule**
 
-`git submodule add git@bitbucket.org:nezkal/tritoq-shipping-bundle.git`
+`git submodule add git@bitbucket.org:nezkal/tritoq-shipping-bundle.git vendor/tritoq`
 
 Example Configuration:
 

@@ -55,8 +55,8 @@ tritoq_shipping:
 #   14 - Emergencial
 #
     jadlog:
-        user: "02649956000144"
-        password: "B2m0O1l3"
+        user: "123456"
+        password: "123456"
         services: "0,4,5"
         parameters:
             vCepOrig: "89812120"

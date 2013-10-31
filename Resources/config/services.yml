@@ -1,0 +1,20 @@
+parameters:
+    tritoq.shipping.correios.class: Tritoq\Bundle\ShippingBundle\Services\CorreiosService
+    tritoq.shipping.jadlog.class: Tritoq\Bundle\ShippingBundle\Services\JadlogService
+
+services:
+    tritoq.shipping.correios.provider:
+        class: %tritoq.shipping.correios.class%
+        calls:
+          - [setConfigurations, [%tritoq.shipping.correios.configuration%]]
+
+    tritoq.shipping.jadlog.provider:
+        class: %tritoq.shipping.jadlog.class%
+        calls:
+          - [setConfigurations, [%tritoq.shipping.jadlog.configuration%]]
+
+    tritoq.shipping.manager:
+        class: Tritoq\Bundle\ShippingBundle\Manager\ShippingManager
+        arguments: [ @session ]
+        calls:
+            - [setProviders, [{correios: @tritoq.shipping.correios.provider, jadlog: @tritoq.shipping.jadlog.provider }]]

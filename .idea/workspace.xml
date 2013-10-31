@@ -29,7 +29,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="134" selection-end="134" vertical-scroll-proportion="0.102622576" vertical-offset="0" max-vertical-offset="877">
+            <state line="33" column="3" selection-start="680" selection-end="680" vertical-scroll-proportion="0.56442416" vertical-offset="0" max-vertical-offset="877">
               <folding />
             </state>
           </provider>
@@ -186,7 +186,11 @@
       <created>1383223564225</created>
       <updated>1383223564225</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Atualização README">
+      <created>1383223637698</created>
+      <updated>1383223637698</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -232,7 +236,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="134" selection-end="134" vertical-scroll-proportion="0.102622576" vertical-offset="0" max-vertical-offset="877">
+        <state line="33" column="3" selection-start="680" selection-end="680" vertical-scroll-proportion="0.56442416" vertical-offset="0" max-vertical-offset="877">
           <folding />
         </state>
       </provider>

@@ -31,3 +31,4 @@ tritoq_shipping:
             vCepOrig: "89812120"
             vVlColeta: "10,00"
             vSeguro: N
+```

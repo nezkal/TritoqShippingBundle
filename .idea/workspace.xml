@@ -47,7 +47,7 @@
       <file leaf-file-name="composer.json" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="45" selection-start="489" selection-end="489" vertical-scroll-proportion="0.21101993" vertical-offset="0" max-vertical-offset="853">
+            <state line="12" column="42" selection-start="486" selection-end="486" vertical-scroll-proportion="0.21101993" vertical-offset="0" max-vertical-offset="853">
               <folding />
             </state>
           </provider>
@@ -201,7 +201,11 @@
       <created>1383225489096</created>
       <updated>1383225489096</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Atualização README">
+      <created>1383226090644</created>
+      <updated>1383226090644</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -275,7 +279,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="45" selection-start="489" selection-end="489" vertical-scroll-proportion="0.21101993" vertical-offset="0" max-vertical-offset="853">
+        <state line="12" column="42" selection-start="486" selection-end="486" vertical-scroll-proportion="0.21101993" vertical-offset="0" max-vertical-offset="853">
           <folding />
         </state>
       </provider>

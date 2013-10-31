@@ -1,0 +1,20 @@
+{
+    "name": "tritoq/shipping-bundle",
+    "type": "symfony-bundle",
+    "description": "Shipping Manager with integration Correios and Jadlog Service",
+    "keywords": ["shipping", "correios", "jadlog", "frete"],
+    "homepage": "https://bitbucket.org/nezkal/tritoq-shipping-bundle",
+    "license": "MIT",
+    "authors": [
+        { "name": "Artur T Magalhães", "email": "nezkal@gmail.com" }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/framework-bundle": ">=2.1.0,<2.3-dev",
+        "symfony/console": ">=2.1.0,<2.3-dev"
+    },
+    "autoload": {
+        "psr-0": { "Tritoq\\Bundle\\ShippingBundle": "" }
+    },
+    "target-dir": "Tritoq/Bundle/ShippingBundle"
+}

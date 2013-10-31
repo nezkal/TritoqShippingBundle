@@ -15,7 +15,7 @@ Example Configuration:
 
 ```yaml
 #
-# Serviços
+# Serviços Correios
 #   41106 = PAC sem contrato
 #   40010 = SEDEX sem contrato
 #   40045 = SEDEX a Cobrar, sem contrato
@@ -40,7 +40,20 @@ tritoq_shipping:
         parameters:
             sCepOrigem: 89812120
             nCdFormato: 1
-
+#
+#
+# Servicos Jadlog
+#   0 - Expresso
+#   3 - Package
+#   4 - Rodoviário
+#   4 - Econômico
+#   6 - Doc
+#   7 - Corporate
+#   9 - .COM
+#   10 - Internacional
+#   12 - Cargo
+#   14 - Emergencial
+#
     jadlog:
         user: "02649956000144"
         password: "B2m0O1l3"
@@ -49,4 +62,40 @@ tritoq_shipping:
             vCepOrig: "89812120"
             vVlColeta: "10,00"
             vSeguro: N
+```
+
+Register Namespace:
+
+```php
+
+
+
+
+```
+
+
+Register Bundle in AppKernel:
+
+```php
+    $bundles = array(
+        ...
+        new Tritoq\Bundle\ShippingBundle\TritoqShippingBundle(),
+        ...
+    )
+
+```
+
+
+```php
+
+Usage:
+
+```php
+
+public function indexController ()
+{
+
+}
+
+
 ```

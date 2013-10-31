@@ -64,15 +64,6 @@ tritoq_shipping:
             vSeguro: N
 ```
 
-Register Namespace:
-
-```php
-
-
-
-
-```
-
 
 Register Bundle in AppKernel:
 
@@ -85,17 +76,16 @@ Register Bundle in AppKernel:
 
 ```
 
-
-```php
-
 Usage:
 
 ```php
 
 public function indexController ()
 {
-
+       $shipping = $this->container->get('tritoq.shipping.manager');
+       // Add um product
+       /** @var Tritoq\Bundle\ShippingBundle\Manager\ShippingManager $shipping **/
+       $shipping->addProduct($weight, $width, $height, $depth);
 }
-
 
 ```

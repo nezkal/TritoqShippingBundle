@@ -1,7 +1,6 @@
 <?php
 namespace Tritoq\Bundle\ShippingBundle\Services;
 
-use Symfony\Component\DomCrawler\Crawler;
 use Tritoq\Bundle\ShippingBundle\Services\Exception\HardException;
 
 /**
@@ -221,32 +220,42 @@ class CorreiosService implements ServicesInterface
         $url = $this->getUrl();
 
 
-        $crawler = new Crawler();
-        $crawler->addXmlContent(file_get_contents($url));
-
         $error = false;
+        $crawler = new Crawler();
 
-        foreach ($crawler->filter('MsgErro') as $item) {
+        $xml = file_get_contents($url);
 
-            $nodeValue = isset($item->firstChild->nodeValue) ? $item->firstChild->nodeValue : null;
 
-            if (!empty($nodeValue)) {
-                if ($nodeValue == "CEP de destino invalido.") {
-                    throw new HardException($nodeValue);
+        $simplexml = new \SimpleXMLElement($xml);
+
+
+        if($simplexml->MsgErro) {
+            foreach ($simplexml->MsgErr as $item) {
+
+                $nodeValue = isset($item) ? $item : null;
+
+                if (!empty($nodeValue)) {
+                    if ($nodeValue == "CEP de destino invalido.") {
+                        throw new HardException($nodeValue);
+                    }
+
+                    $error = $nodeValue;
                 }
-
-                $error = $nodeValue;
             }
         }
 
-        if ($error == false) {
-            foreach ($crawler->filter("cServico") as $item) {
-                $c = new Crawler();
-                $c->add($item);
 
-                $codigo = $c->filter("Codigo")->first()->text();
-                $valor = $c->filter("Valor")->first()->text();
-                $prazo = $c->filter("PrazoEntrega")->first()->text();
+        if ($error == false) {
+
+
+            foreach ($simplexml->cServico as $item) {
+
+
+
+                $codigo =  $item->Codigo . "";
+                $valor = $item->Valor;
+                $prazo = $item->PrazoEntrega;
+
 
                 $label = isset($this->codservices[$codigo]) ? $this->codservices[$codigo] : 'Sem descrição';
 

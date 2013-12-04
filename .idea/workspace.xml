@@ -38,7 +38,7 @@
       <file leaf-file-name="CorreiosService.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Services/CorreiosService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="222" column="23" selection-start="5079" selection-end="5079" vertical-scroll-proportion="0.49396268" vertical-offset="2880" max-vertical-offset="4200">
+            <state line="255" column="48" selection-start="5829" selection-end="5829" vertical-scroll-proportion="0.5883644" vertical-offset="3289" max-vertical-offset="4200">
               <folding />
             </state>
           </provider>
@@ -333,7 +333,11 @@
       <created>1386182773643</created>
       <updated>1386182773643</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="correção de bugs">
+      <created>1386183524205</created>
+      <updated>1386183524205</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -441,7 +445,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Services/CorreiosService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="23" selection-start="5079" selection-end="5079" vertical-scroll-proportion="0.49396268" vertical-offset="2880" max-vertical-offset="4200">
+        <state line="255" column="48" selection-start="5829" selection-end="5829" vertical-scroll-proportion="0.5883644" vertical-offset="3289" max-vertical-offset="4200">
           <folding />
         </state>
       </provider>

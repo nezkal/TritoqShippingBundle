@@ -252,8 +252,8 @@ class CorreiosService implements ServicesInterface
 
 
                 $codigo =  $item->Codigo . "";
-                $valor = $item->Valor;
-                $prazo = $item->PrazoEntrega;
+                $valor = $item->Valor . "";
+                $prazo = $item->PrazoEntrega . "";
 
 
                 $label = isset($this->codservices[$codigo]) ? $this->codservices[$codigo] : 'Sem descrição';

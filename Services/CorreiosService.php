@@ -221,7 +221,6 @@ class CorreiosService implements ServicesInterface
 
 
         $error = false;
-        $crawler = new Crawler();
 
         $xml = file_get_contents($url);
 

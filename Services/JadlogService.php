@@ -1,8 +1,6 @@
 <?php
 namespace Tritoq\Bundle\ShippingBundle\Services;
 
-
-use Symfony\Component\DomCrawler\Crawler;
 use Tritoq\Bundle\ShippingBundle\Services\Exception\HardException;
 
 class JadlogService implements ServicesInterface
@@ -216,13 +214,17 @@ class JadlogService implements ServicesInterface
             $this->parameters['vModalidade'] = $service;
             $arguments = array($method => $this->parameters);
             $result = $client->__soapCall($method, $arguments, $options);
-            $crawler = new Crawler();
-            $crawler->addXmlContent($result->valorarReturn);
-            $value = $crawler->filter('Retorno')->first()->text();
 
+            $simplexml = new \SimpleXMLElement($result->valorarReturn);
+
+
+            //$crawler = new Crawler();
+            //$crawler->addXmlContent($result->valorarReturn);
+
+            $value = $simplexml->Jadlog_Valor_Frete->Retorno; //$crawler->filter('Retorno')->first()->text();
 
             if ($value == '-1') {
-                throw new HardException($crawler->filter('Mensagem')->first()->text());
+                throw new HardException($simplexml->Mensagem);
             }
 
 

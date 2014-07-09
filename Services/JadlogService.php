@@ -18,32 +18,34 @@ class JadlogService implements ServicesInterface
      */
     private $password;
 
-    private $listServices = array(
-        '0' => 'Expresso',
-        '3' => 'Package',
-        '4' => 'Rodoviário',
-        '5' => 'Econômico',
-        '6' => 'Doc',
-        '7' => 'Corporate',
-        '9' => '.COM',
-        '10' => 'Internacional',
-        '12' => 'Cargo',
-        '14' => 'Emergencial'
-    );
+    private $listServices
+        = array(
+            '0' => 'Expresso',
+            '3' => 'Package',
+            '4' => 'Rodoviário',
+            '5' => 'Econômico',
+            '6' => 'Doc',
+            '7' => 'Corporate',
+            '9' => '.COM',
+            '10' => 'Internacional',
+            '12' => 'Cargo',
+            '14' => 'Emergencial'
+        );
 
-    private $parameters = array(
-        'vModalidade' => null,
-        'Password' => null,
-        'vSeguro' => null,
-        'vVlDec' => null,
-        'vVlColeta' => null,
-        'vCepOrig' => null,
-        'vCepDest' => null,
-        'vPeso' => null,
-        'vFrap' => 'N',
-        'vEntrega' => 'D',
-        'vCnpj' => null
-    );
+    private $parameters
+        = array(
+            'vModalidade' => null,
+            'Password' => null,
+            'vSeguro' => null,
+            'vVlDec' => null,
+            'vVlColeta' => null,
+            'vCepOrig' => null,
+            'vCepDest' => null,
+            'vPeso' => null,
+            'vFrap' => 'N',
+            'vEntrega' => 'D',
+            'vCnpj' => null
+        );
 
     /**
      * @var array
@@ -119,21 +121,24 @@ class JadlogService implements ServicesInterface
 
     /**
      * @param $cep
+     *
      * @return string
      */
     private function clearCep($cep)
     {
         preg_match('/(\d{5})-(\d{3})/', $cep, $matches);
 
-        if ($matches)
+        if ($matches) {
             return $matches[1] . $matches[2];
-        else
+        } else {
             return $cep;
+        }
     }
 
 
     /**
      * @param array $configurations
+     *
      * @return $this|ServicesInterface
      */
     public function setConfigurations(array $configurations)
@@ -178,6 +183,7 @@ class JadlogService implements ServicesInterface
 
     /**
      * @param string $destiny
+     *
      * @return array
      * @throws Exception\HardException
      */
@@ -232,6 +238,10 @@ class JadlogService implements ServicesInterface
 
             $number = doubleval(str_replace(",", ".", str_replace(".", "", $value)));
 
+            if ($number < 0) {
+                $number = 0;
+            }
+
             $values[$service] = array(
                 'prazo' => 0,
                 'valor' => number_format($number, 2, ",", ""),
@@ -254,6 +264,7 @@ class JadlogService implements ServicesInterface
      * @param int $width
      * @param int $height
      * @param int $depth
+     *
      * @return ServicesInterface
      */
     public function addItem($weight, $width, $height, $depth)

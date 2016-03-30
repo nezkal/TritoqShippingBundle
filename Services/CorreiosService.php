@@ -51,7 +51,7 @@ class CorreiosService implements ServicesInterface
     /**
      * @var string
      */
-    private $url = "http://ws.correios.com.br/calculador/CalcPrecoPrazo.aspx";
+    private $url = "http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx";
 
     /**
      * @var array

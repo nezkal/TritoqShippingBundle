@@ -228,6 +228,9 @@ class CorreiosService implements ServicesInterface
         $xml = curl_exec($ch);
         curl_close($ch);
 
+
+        file_put_contents("data.txt", $xml);
+
         $simplexml = new \SimpleXMLElement($xml);
 
 

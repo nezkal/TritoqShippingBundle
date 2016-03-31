@@ -51,7 +51,7 @@ class CorreiosService implements ServicesInterface
     /**
      * @var string
      */
-    private $url = "http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx";
+    private $url = "http://ws.correios.com.br/calculador/CalcPrecoPrazo.aspx";
 
     /**
      * @var array
@@ -229,7 +229,7 @@ class CorreiosService implements ServicesInterface
         curl_close($ch);
 
 
-        file_put_contents("data.txt", $xml);
+        //file_put_contents("data.txt", $xml);
 
         $simplexml = new \SimpleXMLElement($xml);
 

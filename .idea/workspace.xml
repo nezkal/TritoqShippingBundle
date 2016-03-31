@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="128bb675-ba44-46a5-bd85-efc9be1dad10" name="Default" comment="">
+    <list default="true" id="128bb675-ba44-46a5-bd85-efc9be1dad10" name="Default" comment="Fix URL">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Services/CorreiosService.php" afterPath="$PROJECT_DIR$/Services/CorreiosService.php" />
     </list>
@@ -44,8 +42,8 @@
       <file leaf-file-name="CorreiosService.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Services/CorreiosService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47795823">
-              <caret line="231" column="44" selection-start-line="231" selection-start-column="44" selection-end-line="231" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.33062646">
+              <caret line="231" column="10" selection-start-line="231" selection-start-column="10" selection-end-line="231" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -300,7 +298,13 @@
       <option name="project" value="LOCAL" />
       <updated>1459428484490</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Fix URL">
+      <created>1459429397127</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1459429397127</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -338,6 +342,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Iniciando o projeto" />
     <MESSAGE value="Atualização README" />
     <MESSAGE value="correção de bugs" />
@@ -559,8 +566,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Services/CorreiosService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47795823">
-          <caret line="231" column="44" selection-start-line="231" selection-start-column="44" selection-end-line="231" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.33062646">
+          <caret line="231" column="10" selection-start-line="231" selection-start-column="10" selection-end-line="231" selection-end-column="10" />
           <folding />
         </state>
       </provider>
